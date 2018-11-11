@@ -1,0 +1,162 @@
+@media only screen and (width:320px) {
+	.box{
+	width: 320px;
+	height: 568px;
+	margin: 0 auto;
+    }
+}
+@media only screen and (width:360px) {
+	.box{
+	width: 360px;
+	margin: 0 auto;
+    }
+}
+@media only screen and (width:375px) {
+	.box{
+	width: 375px;
+	height: 667px;
+	margin: 0 auto;
+    }	
+}
+@media only screen and (width:414px) {
+	.box{
+	width: 414px;
+	margin: 0 auto;
+    }
+}
+
+@media only screen and (width:568px) {
+	.box{
+	width: 568px;
+	
+	margin: 0 auto;
+    }	
+}
+@media only screen and (width:640px) {
+	.box{
+	width: 640px;
+	margin: 0 auto;
+    }
+}
+@media only screen and (width:667px) {
+	.box{
+	width: 667px;
+	margin: 0 auto;
+    }
+}
+@media only screen and (width:736px) {
+	.box{
+	width: 736px;
+	margin: 0 auto;
+    }	
+}
+@media only screen and (min-width:750px) {
+	.box{
+		width: 750px;
+		position: relative;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	
+	.search{
+		margin-top: 5%;
+	}
+	.foot{
+		width: 750px;
+	}
+	.wwbj,.wb{
+		
+		bottom: 0;
+	}
+	
+	
+}
+@media only screen and (max-width:750px) {
+	.wrapper03{
+		width: 750px;
+	}
+	.jjbj{
+		background-size:contain;
+	}
+	
+}
+
+
+@media only screen and (width:568px) {
+
+    .search{
+		margin-top: 3%;
+	}
+	.naver{
+	height: 45%;
+	left: 0;
+	position: fixed;
+    }
+	 .naver .col-xs-6{
+	height: 30%;
+	padding-top: 1%;
+	text-align: center;
+	padding-left: 10%;
+    }
+	.nava img{
+		width: 45px;
+	}
+	.nava span{
+		margin-top: 4%;
+	    padding-left: 2%;
+	}
+	.sear{
+	margin-top: -11%;
+    }
+}
+@media only screen and (min-width:570px) {
+	.naver{
+	width: 750px;
+	/*height: 45%;*/
+	position: fixed;
+	z-index: 10;
+    }
+    .nav1{
+    	margin-top: 2%;
+    }
+    .naver .col-xs-6{
+	height: 30%;
+	margin-top: 0.5%;
+	text-align: center;
+	padding-left: 5%;
+    }
+	.nava img{
+		width: 45px;
+	}
+	.nava span{
+		margin-top: 4%;
+	    padding-left: 2%;
+	}
+    .search{
+		margin-top: 2%;
+	}
+	.sear{
+	margin-top: -11%;
+    }
+    .head{
+	width: 100%;
+	height:6.5%;
+	overflow: hidden;
+    }
+    .logo{
+	width:11.34%;
+	height: auto;
+	margin-left: 4.54%;
+	padding-left: 2%;
+	margin-top: 0;
+	float: left;
+    }
+
+	
+
+	
+    .jjbj{
+		background-size:cover;
+	}
+
+}

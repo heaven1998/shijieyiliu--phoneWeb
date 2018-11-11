@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		
+		
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/stylell.css" />
+	
+      <link rel="stylesheet" type="text/css" href="css/shopcar.css">
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script type="text/javascript" src="js/jquery-3.3.1.mini.js" ></script>
+    <script type="text/javascript" src="js/auto-size.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+	
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a href="#" class="back" style="margin-top:5px;">
+				<img src="img/fah.png" style="width:28px; ">
+			</a>
+			<a class="mui-action-back mui-icon mui-pull-left" href=""><i class="iconfont"></i></a>
+			<h1 class="mui-title" style="font-size: 26px;">购物车</h1>
+			<a href="#" class="home"  style="margin-top:-5px;">
+				<img style="width: 28px;" src="img/bj.png">
+			</a>
+		</header>
+		<div class="lb">
+		<div class="check">
+			<div class="xz" data="0"></div>
+		</div>
+		<img src="img/xh.png"  class="spt">
+		<div class="mid">
+			<p class="name" style="font-size: 16px;">"饰界一流"纯银雪花耳钉女气质 </p>
+			<p class="color" style="font-size: 14px;">颜色:雪花耳钉</p>
+			<div class="jj">
+				<span class="jia">-</span>
+				<input class="num" value="1">
+				<span class="jian">+</span>
+			</div>
+		</div>
+		<div class="jgq">
+			<div class="price" style="font-size: 15px;"><p>￥<span class="pri">89.00</span></p></div>
+			
+			<img src="img/delete.png" class="del" >
+		</div>
+	</div>
+	<div class="lb">
+		<div class="check">
+			<div class="xz" data="0"></div>
+		</div>
+		<img src="img/zt.PNG"  class="spt">
+		<div class="mid">
+			<p class="name" style="font-size: 16px;">手链女纯银简约首饰彼岸花生日礼物</p>
+			<p class="color" style="font-size: 14px;">颜色:纯银</p>
+			<div class="jj" >
+				<span class="jia">-</span>
+				<input class="num" value="1">
+				<span class="jian">+</span>
+			</div>
+		</div>
+		<div class="jgq">
+			<div class="price" style="font-size: 15px;"><p>￥<span class="pri">110.00</span></p></div>
+			
+			<img src="img/delete.png" class="del" >
+		</div>
+	</div>
+	<div class="lb">
+		<div class="check">
+			<div class="xz" data="0"></div>
+		</div>
+		<img src="img/zy.PNG"  class="spt">
+		<div class="mid">
+			<p class="name" style="font-size: 16px;">"饰界一流"项链女锁骨韩版简约</p>
+			<p class="color" style="font-size: 14px;">颜色:纯银</p>
+			<div class="jj">
+				<span class="jia">-</span>
+				<input class="num" value="1">
+				<span class="jian">+</span>
+			</div>
+		</div>
+		<div class="jgq">
+			<div class="price" style="font-size: 15px;color: red;"><p>￥<span class="pri">65.00</span></p></div>
+			
+			<img src="img/delete.png" class="del" >
+		</div>
+	</div>
+	<div class="lb"></div>
+	
+
+	<div class="fix_bottom">
+		<div id="qx" data="0"></div><span style="float:left;line-height:0.8rem; font-size: 16px;">全选</span>
+		<div class="zjq">
+		<p class="p1">合计:￥
+		<span id="zj" >0</span>
+		</p>
+		<p>含运费</p>
+		</div>
+		<a  href="ddtj.html" id="js">结算(<span id="zsl">0</span>)</a>
+	</div>
+	<div class="foot">
+				<div class="foot1" data-scroll-reveal="enter right after 0.5s"><a href="index.html" title="首页"><img class="tb" src="img/tb1.png"></a></div>
+    	<div class="foot1"><a href="shequ.html" title="社区"><img class="tb" src="img/tb2.png"></a></div>
+    	<div class="foot1"><a href="xiaoxi.html" title="消息"><img class="tb" src="img/tb3.png"></a></div>
+    	<div class="foot1"><a href="gwc.html" title="购物车" class="wid"><img class="tb" src="img/tb41.png"></a></div>
+    	<div class="foot1"><a href="shijie.html" title="饰界"><img class="tb" src="img/tb5.png"></a></div>
+    </div>
+		</div>
+			 
+			<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+			<script type="text/javascript" src="js/shop.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			js();
+			$(".xz").click(function(){
+				var a = $(this).attr("data");
+				if (a==0) {
+					$(this).css("background-image","url(img/check.jpg)");
+					$(this).attr("data",1)
+				}else{
+					$(this).css("background-image","url(img/check.jpg)");
+					$(this).attr("data",0)
+					$("#qx").attr("data",0);
+					$("#qx").css("background-image","url(img/check.jpg)");
+				}
+				js();				
+				
+			})
+			$("#qx").click(function(){
+				var a = $(this).attr("data");
+				if (a==0) {
+					$(".xz").attr("data",1);
+				$(this).css("background-image","url(img/check_on.jpg)");
+				$(".xz").css("background-image","url(img/check_on.jpg)");
+				$(this).attr("data",1);
+				}else{
+					$(".xz").attr("data",0);
+				$(this).css("background-image","url(img/check.jpg)");
+				$(".xz").css("background-image","url(img/check.jpg)");
+					$(this).attr("data",0);
+				}
+				js();
+			})
+			$(".jian").click(function(){
+				var a = $(this).prev().val();
+				a++;
+				$(this).prev().val(a);
+				js();
+
+			})
+			$(".jia").click(function(){
+				var a = $(this).next().val();
+				a--;
+				$(this).next().val(a);
+				var a = $(".xz").attr("data");
+				if(a==1){
+					js();
+				}
+			})
+			
+			$(".del").click(function(){
+				$(this).parent().parent().remove();
+				js(); 
+			})
+		
+			 function js(){
+
+				var num=0;
+				var conut=0;
+				$(".xz").each(function(){
+					if ($(this).attr("data")==1) {
+						var b = $(this).parent().next().next().find(".num").val();
+						var jg = $(this).parent().next().next().next().find(".pri").text();
+						conut+=parseInt(b);
+		    			num+=b*jg;
+					}
+				})
+				
+		  		$('#zj').html(num);
+		  		$('#zsl').html(conut);
+			}
+		})
+			
+	</script>
+	</body>
+
+</html>
